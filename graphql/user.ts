@@ -1,4 +1,3 @@
-  
 import * as dotenv from 'dotenv';
 import * as randomstring from 'randomstring';
 import * as jwt from 'jsonwebtoken';
@@ -101,9 +100,9 @@ export const resolvers = {
       password,
       name,
     }: {
-      email: User['email'],
-      password: User['password'],
-      name: User['name'],
+      email: User['email'];
+      password: User['password'];
+      name: User['name'];
     }) => {
       const userRepository: Repository<User> = getRepository(User);
 
@@ -130,8 +129,8 @@ export const resolvers = {
       email,
       password,
     }: {
-      email: User['email'],
-      password: User['password']
+      email: User['email'];
+      password: User['password'];
     }) => {
       const userRepository: Repository<User> = getRepository(User);
 
@@ -155,10 +154,10 @@ export const resolvers = {
       password,
       name
     }: {
-      token: string,
-      email: User['email'],
-      password: User['password'],
-      name: User['name']
+      token: string;
+      email: User['email'];
+      password: User['password'];
+      name: User['name'];
     }) => {
       const userRepository: Repository<User> = getRepository(User);
 
