@@ -11,7 +11,6 @@ import { verifyToken } from '@Lib/utils';
 
 import CustomError from '@Lib/customError';
 
-
 dotenv.config();
 
 export const typeDef = gql`
@@ -93,7 +92,6 @@ export const resolvers = {
       return user;
     },
   },
-
   Mutation: {
     register: async (_: any, {
       email,
