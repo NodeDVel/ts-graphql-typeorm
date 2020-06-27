@@ -67,6 +67,11 @@ const Errors: { [key in ErrorNames]: IError } = {
       code: 412,
       message: '중복되는 데이터입니다.',
     },
+    Not_Found_User: {
+      description: '존재하지 않은 사용자',
+      code: 404,
+      message: '해당 사용자가 존재하지 않습니다',
+    },
     Not_Found_Board: {
       description: '존재하지 않는 게시글',
       code: 404,

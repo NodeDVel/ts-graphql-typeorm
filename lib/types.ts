@@ -11,6 +11,7 @@ export enum ErrorNames {
   Token_Expired = 'Token_Expired',
   Forbidden = 'Forbidden',
   Exist_Data = 'Exist_Data',
+  Not_Found_User = 'Not_Found_User',
   Not_Found_Board = 'Not_Found_Board',
   Not_Found_Comment = 'Not_Found_Comment',
 }
